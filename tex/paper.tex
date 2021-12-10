@@ -1,0 +1,608 @@
+%!TEX root = youth_draft.tex - wont compile by itself
+\sectionL{Introduction} \label{intro}
+
+Policy preferences typically vary across the life cycle: young voters
+may care more about education, employment, and climate, while older
+voters may care more about fiscal and socio-cultural issues. Since
+electoral politics the world over is largely the preserve of middle
+aged men\footnote{the global median age of legislators is 53 which is
+well over the median age of 29
+\parencite{union2012global,united2015world}}, one might reasonably
+suspect that public policy may not be representative of the
+preferences of all voters. This problem is particularly acute in the
+developing world, where the median age is typically even lower, but
+the political class is often dynastic and geriatric\footnote{We
+provide summary statistics on the age representation gap in India in
+appendix \ref{sub:agerepIndia}}. Lowering the voting age has been
+proposed as a policy to improve the representation of youth interests
+by generating electoral pressure on political parties to compete over
+young voters \parencite{vote16WP}. In this paper, we estimate the
+effects the largest recorded youth enfranchisement, the lowering of
+the voting age from 21 to 18 in India in the late 1980s, and find
+negligible electoral effects.
+
+Compositional changes in the electorate, such as through women's
+suffrage \parencite{Miller2008-xn,Teele2018-vz,Morgan-Collins2021-yq},
+introduction of compulsory voting \parencite{fowler2013electoral}, or
+voting technology that serves as a de-facto enfranchisement of a
+subset of the electorate
+\parencite{hidalgo2012renovating,fujiwaraVotingTechnologyPolitical2015,desai2019technology},
+have been shown to have substantial political and policy consequences,
+typically in favor of the newly enfranchised group. However, these
+political consequences are contingent on the newly enfranchised group
+exercising their newly granted right to vote. Little evidence exists
+on whether newly-enfranchised youth exercise this right. Answering
+this question satisfactorily is challenging because these reforms are
+simultaneously implemented at the national level, therefore leaving us
+with no obvious comparison units, while across-country comparisons are
+rife with omitted-variables bias. The scant work that attempts to
+study the consequences of lower voting ages compares national level
+turnout before and after the reduction
+\parencite{mcallister2014politics} and is likely confounded by
+aggregate trends in turnout, which were steadily decreasing in OECD
+countries in the 20th century. Yet, despite the scant evidence on
+electoral consequences of voting-age changes, there is policy-interest
+in voting-age changes, as exemplified by the failed amendment to lower
+the voting age to 16 in HR1 \parencite{vote16USAHR1} in the US, as
+well as similar movements across multiple OECD countries.
+
+In this paper, we study the political consequences of a large
+franchise extension to the youth -- the lowering of the voting age
+from 21 to 18 -- implemented by the 61st amendment of India in
+December 1988 \parencite{sharma2021introduction}. In the late 1980s,
+then prime minister Rajiv Gandhi spearheaded reforms to lower the
+voting age from 21 to 18, and consequently added nearly 50 million new
+eligible voters \parencite{Ani_2019,Pachauri1989-oc}, which was nearly
+7\% of the population or 13.5\% of the voting age
+population\footnote{This figure is based on the population in 1985,
+which was 784 million \parencite{desa2015united}, and the voting age
+population ($\geq 21$, which was $\approx$ 380 million
+\parencite{Pachauri1989-oc})}, which constitutes the largest franchise
+extension since Indian independence and democratisation in 1950. We
+use variation in the age-composition of constituencies at the time of
+the reform to conduct difference-in-differences comparisons before and
+after the implementation of the amendment in 1989 to estimate the
+effects of the youth franchise extension on voter turnout, incumbent
+politicians' re-election rates, and electoral competition in state
+level politics. We find that the policy led to no statistically
+detectable changes in the size of the registered electorate, turnout,
+incumbency, and political competition, and if anything, marginally
+lowered turnout rates and competition.
+
+These findings are in stark contrast to the expectations of the policy
+in the Indian news media at the time \parencite{Pachauri1989-oc},
+where there was widespread optimism about youth participation and the
+anticipated increase in electoral competition thanks to the sheer size
+of the youth vote. Our finding that a unprecedented injection of young
+voters into the electorate had negligible political consequences
+suggests that legal changes alone are unlikely to improve youth
+representation in politics. This finding also offers a potential
+explanation for the persistence of this stark gap: parties correctly
+anticipate low participation from the youth in electoral politics, and
+as such tailor their electoral strategies to older voters. This
+low-representation state is sustained by and feeds into low youth
+entry into politics.
+
+Our findings contribute to the extensive literature in political
+economy on the causes and consequences of franchise extensions
+\parencite{acemogluTheoryPoliticalTransitions2001,aidt2013democratization,aidt2015democratization,berlinski2011political}.
+Much of this literature focusses on reforms in the 1800s that
+enfranchised adult men, and as such the consequences of such franchise
+extensions are typically studied with an eye towards redistribution
+and finds mixed evidence for the theoretical prediction that
+redistribution should rise following franchise extensions
+\parencite{Meltzer1981-gh}. Studies on recent de-jure and de-facto
+franchise extensions of the poor
+\parencite{fujiwaraVotingTechnologyPolitical2015,cassan2020enfranchisement},
+find substantial electoral and public policy effects. Studies
+focussing on womens' suffrage in the US
+\parencite{Morgan-Collins2021-yq} point the pivotal role of suffrage
+movement strength in converting de-jure changes into de-facto
+representation of political interests; our findings are consistent
+with this theory and represent a negative case where the absence of a
+social movement to coordinate newly enfranchised young voters may
+explain the negligible electoral consequences of the policy.
+
+Our findings also contribute to the literature on causes and consequences
+of low youth participation and representation in politics. Scholars
+typically point to supply-side explanations for low participation such
+as low political ambition among young people
+\parencite{lawless2015running} and restrictive minimum age
+requirements. Some recent work, such as \textcite{mcclean2021does} and
+\textcite{curry2018lawmaker}, also examines the consequences of youth
+under-representation and finds that electing older politicians affects
+welfare spending and redistributive policies more generally, which are
+marred by intergenerational conflict. Yet, much existing work is
+missing an explanation for why political parties choose not to tailor
+campaigns and nominate candidates to turn out a large and potentially
+pivotal portion of the electorate. By focussing on a particular
+episode of enormous youth enfranchisement, we study a `best-case'
+setting for youth representation, and find that even here, the
+franchise extension had negligible electoral consequences.
+
+The rest of the paper is organized as follows:
+\ref{sec:research_design} describes the data and research design,
+\ref{sec:res} reports results from the difference-in-differences and
+event study analyzes and examines potential mechanisms, and
+\ref{sec:conc} concludes.
+
+
+% subsection  (end)
+
+% ########     ###    ########    ###
+% ##     ##   ## ##      ##      ## ##
+% ##     ##  ##   ##     ##     ##   ##
+% ##     ## ##     ##    ##    ##     ##
+% ##     ## #########    ##    #########
+% ##     ## ##     ##    ##    ##     ##
+% ########  ##     ##    ##    ##     ##
+
+
+\sectionL{Data and Design} % (fold)
+\label{sec:research_design}
+
+\subsection{Data} % (fold)
+\label{sub:data}
+
+\subsubsection{Treatment}
+Like most franchise extensions, the franchise extension applied to all
+elections held after 1988. In order to evaluate the effects of the
+policy, we use the age composition of different constituencies to
+generate variation in the 'intensity of treatment' of the policy.
+Constituencies with relatively younger populations were naturally
+affected more by the franchise extension.
+
+To construct this treatment intensity measure, we need granular data
+on age composition of sub-national administrative units. To our
+knowledge, age composition is only available at the state level until
+the 1981 census. However, since we're interested in effects on
+state-legislature elections, this is insufficiently granular. We
+therefore use the 1991 census, which was first Indian census that
+reports age composition and cohort-level education at the district
+level. We define `treatment' as having youth share above the
+state-median.  While these are nominally measured post-treatment
+(1991, a year after the first elections with lower voting age) voter
+registration is sufficiently protracted in India to rule out any large
+short run changes in political competition because of migration. This
+measure is valid under the assumption that there was not much
+migration from `treated' (younger) to `control' (older) constituencies
+in response to the policy change, which we believe is likely. We
+report the spatial distribution of age in 1991, as well as our coding
+of binary treatment status using the median as the cutoff, in figure
+\ref{fig:map_panels}. We find a fair amount of variation in the age
+composition of constituencies within and across states; while some of
+the densest states in the gangetic plains (Uttar Pradesh, Bihar,
+Jharkhand) lean older, while Deccan and Southern states have a mix
+young and old constituencies. In our preferred
+difference-in-differences specification, we use \emph{within-}state
+variation in age-composition relative to state medians.
+
+% \bland
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{../output/figs/treatment_map2.png}
+  \caption{Spatial distribution of youth share quantiles (left) and
+  treatment discretised at state-median (right). District level data from
+  1991 census. Bottom panel plots density of the youth share median}
+  \label{fig:map_panels}
+\end{figure}
+% \eland
+
+\subsubsection{Electoral outcomes}
+We restrict our analysis to state-assembly (\emph{Vidhan-Sabha})
+instead of also analysing national-parliamentary (\emph{Lok-Sabha})
+elections three main reasons. First, since Lok Sabha constituencies
+much larger and aggregate multiple districts, the across-constituency
+variation in `treatment intensity' quite small;
+\textcite{Pachauri1989-oc} estimates that the amendment enfranchised
+nearly 100,000 new voters in each of the 545 Lok-Sabha constituencies.
+Secondly, the number of Lok-Sabha constituencies within each state is
+much smaller than the number of Vidhan-Sabha constituencies, thereby
+making within-state difference-in-differences necessitated by our
+preferred specification intractably noisy. Third, because the two
+parliamentary elections immediately following the amendment, the
+parliamentary elections of 1989 and 1991, were marred by controversy
+and the latter was called off-cycle following the dissolution of
+parliament, which makes it unsuitable to evaluate the dynamic effects
+of the policy. Furthermore, the 1991 election was marred by
+low-turnout in the initial phase followed by a surge in turnout
+prompted by the assassination of Rajiv Gandhi between the two rounds
+of the election \parencite{blakeslee2018politics}. Since these shocks
+pull constituencies in opposite directions, and since the preceding
+events altered the stakes of the election substantially beyond the
+nominal increase in the electorate from the amendment, we deem the
+first two post-period hopelessly contaminated for a reasonable
+difference-in-differences comparison for Lok-Sabha elections.
+
+To prepare the analysis sample, we spatially merge districts level age
+composition summaries to assembly-constituency shape-files for the 3rd
+delimitation \parencite{infomap_vs_maps}. Assembly constituencies are
+typically but not always wholly contained inside districts
+\footnote{The median district contains 7 assembly constituencies. When
+assembly constituencies overlap more than 1 district (beyond merge
+error, which we set to be 1\% area), we use areal weights to aggregate
+the two districts' age composition to an AC level one. }. We then
+merge the assembly constituency level treatment measure to
+assembly-constituency level electoral data from
+\textcite{Jensenius2017-qf}, who collate all elections at the
+parliamentary (Lok-Sabha) and state parliamentary (Vidhan-Sabha) level
+since 1960. This allows us to construct a panel of assembly
+constituencies from 1975 onwards (since electoral boundaries were
+redrawn then) with registered voter numbers, turnout, incumbent
+re-election and vote share, effective number of parties, and winning
+margin. We report the aggregate time series (in red) and separate
+trends for treatment and control areas for the six political outcomes
+of interest in fig \ref{fig:agg_trends}. The two groups appear to be
+trending in tandem for most variables before and after the
+implementation of the 61st amendment.
+
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{../output/figs/agg_ts.pdf}
+  \caption{Aggregate trends in political outcomes by constituency
+  type. Dotted line delineates the pre-amendment and post-amendment
+  periods}
+  \label{fig:agg_trends}
+\end{figure}
+
+
+\subsection{Research Design} % (fold)
+\label{ssub:research_design}
+
+Since the treatment applies everywhere after 1988, we propose using a
+difference-in-differences style comparison between places `more' and
+`less' affected by the franchise extension to estimate the effects of
+the policy. The estimand of interest, unlike in conventional DiD
+settings, is the difference in treatment effects (individually
+identified using a pre-post comparison conditional on fixed-effects
+and time trends) rather than the ATT.
+
+We begin with a nonparametric first-differences regression of the form
+
+$$
+\Delta y_i = f( \text{youth share}_i) + \epsi_i
+$$
+
+where we regress changes in political outcomes $\Delta y_i$ between
+the last pre-amendment and first post-amendment election on the share
+of young voters in constituency $i$. We estimate this function
+nonparametrically using local linear regression (and overlay a linear
+fit) in order to avoid functional form assumptions on the effect of
+youth share on political outcomes. This specification also helps
+evaluate potential non-linearities in treatment effect as a function
+of youth share. The consistency of this estimation strategy relies on
+the assumption of uniform-moderation which stipulates that treatment
+effects are monotonic in the moderator (age-composition of
+constituencies).
+
+We then use a difference-in-differences design to compare turnout and
+political competition in constituencies before and after the
+implementation of the 61st amendment. States hold elections every five
+years, but operate on different cycles\footnote{We report the last
+pre-period and first post-period election in table~\ref{tab:elec_pre_last}.
+However, since we standardise this into event time, this is not a
+\emph{staggered} difference in differences, which is a design rife
+with problems \parencite{goodman2018difference}}. We standardise these
+elections into event-time relative to the first post-amendment
+election (0), and estimate fixed-effects regressions of the form
+
+\begin{align}
+Y_{ijt} & = \alpha_i + \gamma_t + \tau D_{ijt}  + \epsi_{ijt} \label{eqn:twfe} \\
+Y_{ijt} & = \alpha_i + \psi_{jt} + \tau D_{ijt} + \epsi_{ijt} \label{eqn:styfe}
+\end{align}
+
+where $i$ indexes constituencies, $j$ indexes states, and $t$ indexes
+time, with $\alpha_i, \gamma_t, \psi_{jt}$, and  denoting constituency
+, election, and state $\times$ election fixed effects. $D_{ijt}$ is
+the `treatment' dummy, which takes on a value of 1 for youth
+constituencies (i.e. constituencies with above-median youth share in
+the state, which is time invariant because we only observe it for one
+cross-section) after the amendment passed. This is akin to a standard
+difference-in-differences regression, where the `treated' and `post'
+dummies are included in the constituency- and time FEs. Since the
+`treatment' only varies at the district level, we deem this the level
+of treatment assignment and cluster standard errors at the district
+level throughout, which is more conservative than clustering by the
+panel unit (constituency level).
+
+
+
+For ~\ref{eqn:twfe} to yield consistent estimates, we need parallel
+trends across states for political outcomes. The particular parallel
+trends is somewhat non-standard, since in this case it demands
+parallel trends between two treated groups with differential
+intensity. Since political outcomes are typically a function of
+state-level party politics and policy changes, we believe that the
+general parallel trends assumption is likely implausible. To address
+this concern, we use specification \ref{eqn:styfe}, which adds state
+$\times$ election fixed-effects. This restricts comparisons the
+\emph{within-state} variation in political outcomes, and so accounts
+for many potential time-varying state level confounders. This means
+that we estimate difference-in-differences between younger and older
+constituencies \emph{within each state}, which connects cleanly with
+our `treatment' definition. The distinction between \ref{eqn:twfe} and
+\ref{eqn:styfe} amounts to whether we are comparing outcomes in the
+green and magenta regions in fig \ref{fig:map_panels} throughout the
+whole country (as in \ref{eqn:twfe}) or within each state boundaries
+(as in \ref{eqn:styfe}). We consider parallel trends to be more likely
+to hold in \ref{eqn:styfe}, and as such consider this our preferred
+specification. We also estimate event-study regressions that decompose
+the treatment effect over time (relative to the period immediately
+preceding the amendment, $t = -1$).
+
+
+
+
+% subsubsection research_design (end)
+% subsection data (end)
+% section research_design (end)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ########  ########  ######  ##     ## ##       ########  ######
+% ##     ## ##       ##    ## ##     ## ##          ##    ##    ##
+% ##     ## ##       ##       ##     ## ##          ##    ##
+% ########  ######    ######  ##     ## ##          ##     ######
+% ##   ##   ##             ## ##     ## ##          ##          ##
+% ##    ##  ##       ##    ## ##     ## ##          ##    ##    ##
+% ##     ## ########  ######   #######  ########    ##     ######
+
+\sectionL{Results}
+\label{sec:res}
+
+
+\subsection{First-differences with continuous treatment} % (fold)
+\label{sub:first_differences_estimates}
+
+We begin by using a simple first-differences regression where we
+regress changes in political outcomes on constituency youth-share in
+1990. In figure \ref{fig:continuous_treatment}, we plot the
+distribution of first-differences as a function of continuous
+variation in the `treatment' - the share of the population in the
+franchise-extension age group, both residualised on state-fixed
+effects (which is equivalent to our preferred State $\times$ time
+fixed effects specification in the two-period setting).We find very
+little non-linearity across all outcomes, and consistently find
+precisely estimated null effects (reported as the slope from the
+linear regression in each panel)\footnote{To evaluate the robustness
+of this approach, we replicate the same figure but with
+first-differences between last two pre-amendment election outcomes and
+report it in \ref{fig:continuous_treatment_placebo}. We find
+negligible effects in the placebo. }.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.9\textwidth]{../output/figs/scatter_outcomes_prepost.pdf}
+  \caption{First differences in electoral outcomes plotted against
+  standardised youth share. Differences are computed between levels in
+  the first post-amendment election minus the last pre-amendment
+  election (i.e. $t \in \SetB{-1, 0}$, and residualised on state
+  fixed-effects. We report a linear LOESS smoother and the linear
+  regression coefficient from the continuous treatment below each
+  panel.}
+  \label{fig:continuous_treatment}
+\end{figure}
+
+% subsection first_differences_estimates (end)
+
+\subsection{Fixed-effects regression estimates}
+
+Next, we report results from estimating the different
+regressions specifications for log number of registered voters and log
+turnout count (voters who turned out) \footnote{ We choose to work
+with the number of voters turning out (the numerator in turnout rates)
+as opposed to computed turnout rates because the latter is a ratio
+with $\# \text{electors}$ as the denominator, and interpreting it
+requires assumptions on how much the denominator grows relative to the
+numerator. Working with the numerator alone simplifies the
+interpretation.} in table \ref{tab:regres_turnout}. Both these
+coefficients are to be interpreted as a percent-change. We find that
+the effect of youth-franchise on log-number of voters  is effectively
+zero to the third decimal point in our preferred specification (column
+2). Similarly, we estimate a small effect of youth franchise on
+turnout on the order of 1 percentage point, although this is also
+statistically indistinguishable from 0.
+
+These results can be thought of as an ecological `first stage' effect
+of the youth franchise, which is necessary for any potential effects
+on political outcomes. Since we fail to find that the size of the
+electorate and turnout rates meaningfully changed in response to the
+enfranchisement, we may anticipate that there were few, if any,
+downstream effects. Since these outcomes are aggregated for the entire
+electorate, the standard ecological inference problem applies : we
+don't strictly observe youth registration and turnout and therefore
+only indirectly test for their magnitudes holding registration and
+turnout rates in the rest of the electorate constant. While a large
+displacement of other segments of the electorate by newly enfranchised
+youth voters is also consistent with our findings, we find such an
+magnitude implausible in the setting under consideration.
+
+\input{../output/tables/turnout_regs.tex}
+
+We then turn to studying whether incumbents were voted-for and
+re-elected at higher rates (conditional on running, hence fewer
+observations). We find that in our preferred specifications, the
+confidence interval for the effect covers zero and is mildly positive,
+suggesting that the effect was likely zero.
+
+\input{../output/tables/incumb_regs.tex}
+
+Finally, we examine whether the introduction of young voters altered
+political competition by studying the effects on the Effective Number
+of Parties (the inverse Hirschman-Herfindahl index of vote
+shares), and the winning margin of the winning candidate. In both
+cases, we find that the effects were very small or zero. The ENOP
+results are notable in how much they differ between the basic two-way
+specification and the within-state specification, suggesting that
+changes in political competition are largely based on uniform swings
+by state.
+
+\input{../output/tables/competition_regs.tex}
+
+
+\subsection{Event Study estimates} % (fold)
+\label{sub:event_study_results}
+
+We now proceed to decompose treatment effect dynamics using an event
+study regression, thereby both verifying the plausibility of parallel
+trends, as well as examining treatment effect dynamics using the basic
+specification, one with state-level time trends, and state$\times$year
+fixed effects (our preferred specification) in fig
+\ref{fig:evstudy_main}. For the most part, we find parallel trends is
+plausible most specifications, since the lead-estimates ($t = -2$) are
+generally zero. Estimates are also remarkably stable across
+specifications, with the state $\times$ year FE specification yielding
+the most precise estimates. Decomposing the effects over time also
+allows us to address the potential concern that negligible effects in
+the first election immediately following the amendment (denoted by 0
+in our event study figures) may have been driven by lack of
+information among the newly enfranchised, and that effects would
+appear in subsequent elections.
+
+We begin with the event study results for number of registered voters
+and voter turnout counts in row 1. For the log-voters outcome we find
+that confidence intervals for all specifications cover zero and rule
+out large growth in the electorate in response to the franchise
+extension. In the latter, we find that if anything, turnout fell,
+although these effects are small and appear with a lag. Next, we
+examine incumbent re-election and vote share in row 2, and again find
+that the estimates cover zero and rule out meaningful effects.
+Finally, we study the effects on ENOP and winning margin in row 3. We
+find that estimates are generally small and statistically
+indistinguishable from zero. Again, we rule out meaningful effects for
+both outcomes.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{../output/figs/coefplot_evstudy.pdf}
+\caption{Event Study: Log Registered Voters, Log Turnout, Incumbent
+  Reelected (binary), Incumbent vote share, ENOP, and winning margin}
+\label{fig:evstudy_main}
+\end{figure}
+\newpage
+
+\subsection{Heterogeneity} % (fold)
+\label{ssub:mechanisms}
+
+We now examine whether the null effects of franchise extension on
+political outcomes are different for constituencies with high and low
+levels of youth education, since one of the motivations for the policy
+was to specifically empower the educated youth of India. To evaluate
+this, we use fully moderated interactions with bins of constituency
+illiteracy rate and education rates (defined as the share of the youth
+population with no literacy and secondary-school education
+respectively) as suggested by \textcite{hainmueller2019much}.
+
+We report these results graphically in figures
+\ref{fig:het_te_electors_edu}. We find that the treatment effect
+appears to not vary significantly with either youth illiteracy of
+youth higher-education rates (binned into high / medium / low). The
+binned estimates are largely consistent with a simple linear
+interaction (indicated by the black line in the figures), and as such
+we fail to detect substantial heterogeneity in these effects.
+
+
+Next, we examine treatment effect heterogeneity by constituency `type'
+in fig \ref{fig:het_te_constype} by estimating the event-study
+separately for the three types of constituencies. India's system of
+electoral reservations ensures that certain constituencies in both the
+national parliament (Lok Sabha) and state parliaments (Vidhan Sabha)
+are reserved for candidates from ST and SC groups on the basis of
+population shares. SC and ST were experiencing relatively high
+population growth at the time \parencite{kulkarni2005population}, so
+one has reason to believe that electoral effects would be largest in
+these constituencies. However, we detect very little heterogeneity in
+most outcomes with the exception of winning margin, where we find that
+SC constituencies became less competitive over time, possibly due to
+incumbent entrenchment.
+
+% subsubsection mechanisms (end)
+\subsection{Robustness Checks}
+
+\subsubsection{Panel Estimators} % (fold)
+Conventional two-way fixed effects regressions estimates are typically
+inconsistent for the Average Treatment effect on the Treated (ATT)
+estimand under treatment effect heterogeneity
+\parencite{SantAnna2020-ly,Imai2020-dg}. While the problem is most
+severe in designs that use staggered treatment adoption (which is not
+the case for our setting), some estimators proposed to address the
+treatment heterogeneity problem in panel data settings have the added
+benefit of typically performing pre-treatment matching, which
+alleviates concerns regarding the parallel trends assumption by
+matching treated units with control units with similar outcome
+trajectories. This is in the spirit of the synthetic control method
+\parencite{abadie2010synthetic}, although our setting is unsuitable
+for use of synthetic control methods since we have only two
+pre-treatment time periods.
+
+We therefore use the panel-matching estimator
+\parencite{imai2019should} that explicitly matches on
+trajectories even for short panels and also allows us to exact-match
+on covariates. This effectively estimates the treatment effects using
+the subset of units for which the parallel trends assumption holds. To
+mimic our preferred specification, we exact-match on state, which
+effectively restricts the pool of matches for any treated constituency
+to other constituencies within that state, thereby holding many
+potential time-varying confounders constant. We report the
+panel-matching estimates for our six outcomes in fig
+\ref{fig:panelmatch}, and find similar results to the regression
+specification and event study. One notable difference is that we the
+negative turnout effects are now statistically significant.
+
+\subsubsection{Recoding the treatment} In the main analysis, we define the
+treatment threshold at the median, which mechanically means that we
+assign similar units to treatment and control depending on whether
+they cross this arbitrary threshold. As an alternative, to maximise
+the contrast between the two groups, we restrict our analysis to
+constituencies that are below the 25th percentile in youth share
+(which we call control) or exceed the 75th percentile in youth share
+(which we call treatment). This yields a `maximum-contrast' version of
+the analysis sample where treatment and control groups are more
+meaningfully different in ex-ante youth share. We then re-estimate the
+treatment effect using our preferred specification (eqn
+\ref{eqn:styfe}) and report the estimates alongside the primary
+estimates from the corresponding specifications (from tables 1-3) in
+\ref{fig:p2575_compare}. Similarly, we re-estimate the event-study
+specifications and report the two sets of coefficients in
+\ref{fig:p2575_compare_evstudy}. The point estimates for turnout are
+somewhat larger and more negative, but overall, the estimates are
+effectively identical and (mechanically) more noisily estimated.
+
+%  ######   #######  ##    ##  ######  ##       ##     ## ########  ########
+% ##    ## ##     ## ###   ## ##    ## ##       ##     ## ##     ## ##
+% ##       ##     ## ####  ## ##       ##       ##     ## ##     ## ##
+% ##       ##     ## ## ## ## ##       ##       ##     ## ##     ## ######
+% ##       ##     ## ##  #### ##       ##       ##     ## ##     ## ##
+% ##    ## ##     ## ##   ### ##    ## ##       ##     ## ##     ## ##
+%  ######   #######  ##    ##  ######  ########  #######  ########  ########
+
+
+\sectionL{Conclusion}
+\label{sec:conc}
+
+
+We estimate the electoral effects of the extension of the franchise to
+18-21 year olds in India in the late 1980s and find that the extension
+had negligible electoral consequences. This precise null electoral
+effect of an unprecedented number of young voters offers pessimistic
+predictions regarding the effectiveness of lower voting ages as a
+means of improving youth representation. These findings also provide a
+potential explanation for why political parties continue to cater
+campaigns and electoral messaging to older voters - they correctly
+anticipate that there are limited electoral penalties for doing so.
+This result also suggests what likely \emph{won't} work to increase
+the substantive representation of the youth - simply giving them the
+vote is insufficient, since they seemingly don't use it. Increasing
+youth representation and engagement in politics likely demands a
+different, more creative, set of policies.
+
+We suggest that the lack of electoral effects may be driven by the
+absence of organizations that coordinate newly enfranchised voters,
+which was a key source of the effects of women's suffrage in the US
+\parencite{Morgan-Collins2021-yq}. Future work in contexts with
+age-disaggregated turnout and preference data may be able to uncover
+these mechanisms directly by estimating cohort-specific turnout
+effects, as well as differences in political preferences across age
+cohorts.
+
+
